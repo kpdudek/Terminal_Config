@@ -10,14 +10,11 @@
 # Light Gray   0;37     White         1;37
 
 # echo -e "Default \e[39mDefault"
+echo -e "\e[35m" && python ~/Terminal_Config/Files/terminal_header.py && echo -e "\e[39m"
 
-if (xinput get-feedbacks "Razer Death Adder Elite" &>/dev/null); then
-  echo -e "\e[32mRazer Mouse Found\e[39m"
-  xinput set-prop 9 'Device Accel Profile' -1
-  xinput set-prop 9 'Device Accel Constant Deceleration' 2
-  xinput set-prop 9 'Device Accel Velocity Scaling' 65 80
-else
-  echo -e "\e[31mRazer Mouse Not Found\e[39m"
-fi
+~/Terminal_Config/Files/MouseSettings/mouse_acceleration_logitechwireless.sh
+~/Terminal_Config/Files/MouseSettings/mouse_acceleration_pixart.sh
+~/Terminal_Config/Files/MouseSettings/razer_mouse_SetSettings.sh
+
 
 echo -e "\e[39m"
