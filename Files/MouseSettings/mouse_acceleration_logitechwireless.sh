@@ -17,7 +17,7 @@ if (xinput get-feedbacks 'Logitech M510' &>/dev/null); then
   xinput set-prop 9 'Device Accel Constant Deceleration' 2
   xinput set-prop 9 'Device Accel Velocity Scaling' 80
 else
-  echo -e "\e[31mNo Logitech Mouse Found\e[39m"
+  echo -e "\e[31mLogitech Mouse Found\e[39m"
 fi
 
-echo -e "\e[39m"
+#echo -e "\e[39m"

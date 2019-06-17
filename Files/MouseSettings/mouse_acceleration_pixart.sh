@@ -20,4 +20,4 @@ else
   echo -e "\e[31mPixart Mouse Not Found\e[39m"
 fi
 
-echo -e "\e[39m"
+#echo -e "\e[39m"
