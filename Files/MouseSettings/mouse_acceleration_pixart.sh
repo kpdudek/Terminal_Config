@@ -11,11 +11,11 @@
 
 # echo -e "Default \e[39mDefault"
 
-if (xinput get-feedbacks "Pixart" &>/dev/null); then
+if (xinput get-feedbacks "17" &>/dev/null); then
   echo -e "\e[32mPixart Mouse Found\e[39m"
-  xinput set-prop 9 'Device Accel Profile' 0
-  xinput set-prop 9 'Device Accel Constant Deceleration' 2
-  xinput set-prop 9 'Device Accel Velocity Scaling' 100 80
+  xinput set-prop 17 'Device Accel Profile' 0
+  xinput set-prop 17 'Device Accel Constant Deceleration' 2
+  xinput set-prop 17 'Device Accel Velocity Scaling' 100
 else
   echo -e "\e[31mPixart Mouse Not Found\e[39m"
 fi
